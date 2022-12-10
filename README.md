@@ -1,7 +1,7 @@
 
 # Data Structures in C
 
-This repositry contains the programs files of Data Structures in C. 
+This repositry contains the program files of Data Structures in C. 
 
 
 ## Authors

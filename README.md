@@ -1,5 +1,5 @@
 
-# Project Title
+# Data Structures in C
 
 This repositry contains the programs of Data Structures in C. 
 

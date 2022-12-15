@@ -1,3 +1,6 @@
+// // fabonacci by recursion.
+// aarshsaxena
+
 #include <stdio.h>
 
 int fab(int n)      //Function 

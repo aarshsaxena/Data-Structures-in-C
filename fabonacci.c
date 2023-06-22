@@ -1,9 +1,8 @@
-// // fabonacci by recursion.
+// //fabonnacci by recursion.
 // aarshsaxena
-
 #include <stdio.h>
 
-int fab(int n)      //Function 
+int fab(int n) // Function
 {
 
     if (n == 1)
@@ -14,7 +13,7 @@ int fab(int n)      //Function
         return fab(n - 1) + fab(n - 2);
 }
 
-void main()     //Main function
+void main() // Main function
 {
     int n, fact;
     printf("\nEnter the number: ");

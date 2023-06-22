@@ -1,73 +1,72 @@
-// //Merging of two sorted 1-d arrays 
+// //Merging of two sorted 1-d arrays
 //      aarshsaxena
-#include<stdio.h>   
+#include <stdio.h>
 void main()
 {
-    int A[100],B[100],C[200];
-    int sizeA,sizeB,sizeC,i,j,k;
-    
-    //input of first array
-    printf("\nEnter size of array A: ");    
-    scanf("%d",&sizeA);
+    int A[100], B[100], C[200];
+    int sizeA, sizeB, sizeC, i, j, k;
+
+    // input of first array
+    printf("\nEnter size of array A: ");
+    scanf("%d", &sizeA);
     printf("Enter integers in ascending order.\n");
 
-    for ( i = 0; i < sizeA; i++)
+    for (i = 0; i < sizeA; i++)
     {
-        printf("\nElement %d: ",i);
-        scanf("%d",&A[i]);
+        printf("\nElement %d: ", i);
+        scanf("%d", &A[i]);
     }
-    
-    //input of second array
+
+    // input of second array
     printf("\nEnter size of array B: ");
-    scanf("%d",&sizeB);
+    scanf("%d", &sizeB);
     printf("Enter integers in ascending order.\n");
 
-    for ( j = 0; j < sizeB; j++)
+    for (j = 0; j < sizeB; j++)
     {
-        printf("\nElement %d: ",j);
-        scanf("%d",&B[j]);
+        printf("\nElement %d: ", j);
+        scanf("%d", &B[j]);
     }
 
-    //merging
-    sizeC=sizeA+sizeB;
+    // merging
+    sizeC = sizeA + sizeB;
 
-    i=0;
-    j=0;
-    k=0;
+    i = 0;
+    j = 0;
+    k = 0;
 
-    while(i<sizeA && j<sizeB)
+    while (i < sizeA && j < sizeB)
     {
-        if (A[i]<B[j])
+        if (A[i] < B[j])
         {
-            C[k]=A[i];
+            C[k] = A[i];
             i++;
             k++;
         }
         else
         {
-            C[k]=B[j];
+            C[k] = B[j];
             j++;
             k++;
         }
     }
-    while (i<sizeA)
+    while (i < sizeA)
     {
-        C[k]=A[i];
+        C[k] = A[i];
         i++;
         k++;
     }
-    while (j<sizeB)
+    while (j < sizeB)
     {
-        C[k]=B[j];
+        C[k] = B[j];
         j++;
         k++;
     }
 
-    //printing of new array
+    // printing of new array
     printf("\nNew Array: \n");
-    for ( k = 0; k < sizeC; k++)
+    for (k = 0; k < sizeC; k++)
     {
-        printf("\n %d",C[k]);
+        printf("\n %d", C[k]);
     }
-    
 }

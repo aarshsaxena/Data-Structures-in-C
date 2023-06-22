@@ -1,5 +1,3 @@
-// //searching an element in an 1-d array by binary search
-// aarshsaxena
 #include <stdio.h>
 void main()
 {
